@@ -1,0 +1,13 @@
+behavior HelloWorld {
+
+    HelloWorld(string[] arguments) {
+        StandardOutput standard_output = new StandardOutput();
+
+        standard_output<-println("hello") @
+        standard_output<-println(" world!") @
+
+        standard_output<-die() @
+        self<-die();
+    }
+
+}
